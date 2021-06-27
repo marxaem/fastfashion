@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'AbbassyCalligraphy';
+    src: url('font/AbbasyCalligraphyTypeface.eot?#iefix') format('embedded-opentype'), 
+        url('font/AbbasyCalligraphyTypeface.woff') format('woff'),
+        url('font/AbbasyCalligraphyTypeface.ttf')  format('truetype'),
+        url('font/AbbasyCalligraphyTypeface.svg#AbbasyCalligraphyTypeface') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'maaja';
+    src: url('font/maaja_ver_1.00-webfont.eot');
+    src: url('font/maaja_ver_1.00-webfont.woff2') format('woff2'),
+        url('font/maaja_ver_1.00-webfont.woff') format('woff'),
+        url('font/maaja_ver_1.00-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mango';
+    src: url('font/MangoSalsaPersonalUse.eot?#iefix') format('embedded-opentype'), 
+        url('font/MangoSalsaPersonalUse.woff') format('woff'),
+        url('font/MangoSalsaPersonalUse.ttf')  format('truetype'),
+        url('font/MangoSalsaPersonalUse.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Prompt:wght@300&display=swap');
+
+.f-mango{font-family: 'Mango';}
+.f-abbassy{font-family: 'AbbassyCalligraphy';}
+.f-maaja{font-family: 'maaja';}
+.f-play{font-family: 'Playfair Display', serif;}
+.f-prompt{font-family: 'Prompt', sans-serif;}
+.f-2{font-size: 2.8rem;}
+.f-4{font-size: 4rem;}
+
+body{
+    background-color: bisque;
+    padding: 30px;
+}
+.bw{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.w-200{ width: 200px; }
+.w-300{ width: 300px; }
+.w-400{ width: 400px; }
+.p-50{ padding-bottom: 50px;}
+.m-auto{ margin: 0 auto;}
+.m-20{ margin: 0 20px;}
+.m-30{ margin: 0 30px;}
+.l-100{ margin-left: 100px;}
+.l-150{ margin-left: 150px;}
+.bot-150{ margin-bottom: 150px;}
+.d-row{ display: flex; flex-direction: row; }
+.d-column{ display: flex; flex-direction: column; }
+.a-center{ align-items: center; display: flex;}
+.j-center{ justify-content: center; display: flex;}
+
+.container{ height: max-content;}
+
+.back{
+    width: 70px;
+    cursor: pointer;
+}
+.back:hover{
+    filter: brightness(0.8);
+}
+.border{
+    border: 5px whitesmoke solid;
+    border-radius: 30px;
+}
+.zoom{ transition: transform .3s ease; }
+.zoom:hover{ transform: scale(1.2); }
+.txt{
+    color: #a38166;
+    transition: font-size .3s ease;
+}
+.txt:hover{
+    font-size: 3.5rem;
+    text-shadow: 5px 2px 5px white;
+}
+.txt2{
+    font-size: 1.4rem;
+    color: #a38166;
+    transition: font-size .3s ease;
+}
+.txt2:hover{
+    font-size: 1.9rem;
+    text-shadow: 5px 2px 5px white;
+}
+
+img, video{
+    border-radius: 7px;
+}
+/* special for vid */
+iframe {
+    height: 230px;
+    width: 400px;
+    resize: both;
+    overflow: auto;
+    border-radius: 7px;
+  }
+.linkwrap {
+    position:relative;
+    display:inline-block;
+}
+.blocker {
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:1;
+}
+
+/* fonts */
+.con{
+    width: max-content;
+    height: 150px;
+}
+.fonts a, .info a{
+    text-decoration: none;
+}
+
+/* info */
+.con2{
+    height: 200px;
+}
+
+/* color palette */
+.palette p{ text-align: center;}
+.block{
+    height: 260px;
+    width: 220px;
+    background-color: whitesmoke;
+    padding-top: 10px;
+    /* margin: 0 20px; */
+}
+.color{
+    height: 200px;
+    width: 200px;
+}
+.brown{background-color: #a38166;}
+.bisque{background-color: bisque;}
+.black{background-color: black;}

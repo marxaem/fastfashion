@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'AbbassyCalligraphy';
+    src: url('font/AbbasyCalligraphyTypeface.eot?#iefix') format('embedded-opentype'), 
+        url('font/AbbasyCalligraphyTypeface.woff') format('woff'),
+        url('font/AbbasyCalligraphyTypeface.ttf')  format('truetype'),
+        url('font/AbbasyCalligraphyTypeface.svg#AbbasyCalligraphyTypeface') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'maaja Regular';
+    src: url('font/maaja_ver_1.00-webfont.eot');
+    src: url('font/maaja_ver_1.00-webfont.woff2') format('woff2'),
+        url('font/maaja_ver_1.00-webfont.woff') format('woff'),
+        url('font/maaja_ver_1.00-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Prompt:wght@300&display=swap');
+
+h2{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+p, li{
+    font-family: 'Prompt', sans-serif;
+}
+.highlight{
+    font-family: 'maaja Regular',sans-serif;
+    font-size: 2rem;
+    color: #a38166;
+    text-align: center;
+    margin-top: 100px;
+}
+.content{
+    background-color: bisque;
+}
+
+.about h2, .getToKnow h2, .fastFashion h2, .avoid h2, .challenge h2{
+    margin-bottom: 30px;
+}
+.getToKnow .container, .fastFashion .container, .avoid .container, .challenge .container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 200px;
+}
+.getToKnow .container .left, .fastFashion .container .right, .avoid .container .right, .challenge .container .left{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.getToKnow .container .left, .fastFashion .container .right, .avoid .container .left, .challenge .container .right{
+    /* align-items: center; */
+    justify-content: center;
+    display: flex;
+}
+
+/* slide */
+.carousel-inner{height: 100vh;}
+.carousel-item img{
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0vh;
+    z-index: 0;
+}
+.carousel-item span{
+    font-family: 'AbbassyCalligraphy';
+    font-size: 7rem;
+    color: white;
+    position: absolute;
+    z-index: 1;
+}
+.center{
+    height: 100vh;
+    display: flex;
+    justify-content: center;        /* horizontal */
+    align-items: center;            /* vertical */
+}
+
+/* about */
+.about .container{padding: 200px 20%;}
+.about .container p{text-align: center;}
+
+/* getToKnow */
+.getToKnow .container{height: max-content;}
+.getToKnow .container .left .one{
+    height: 100px;
+    position: absolute;
+    margin-top: -110px;
+    margin-left: -50px;
+}
+.getToKnow .container .left .two{
+    height: 100px;
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 335px;
+}
+.getToKnow .container .left video{
+    width: 430px;
+    height: 241.88px;
+}
+.getToKnow .container .right{
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.getToKnow .container .right img{width: 45vw;}
+
+/* fastFashion */
+.fastFashion .container .left{margin-right: 70px;}
+.fastFashion .container .right video{width: 430px;}
+
+/* avoid */
+.avoid .container .left{
+    height: 630px;
+    margin-right: 250px;
+}
+.avoid .container .left img{height: 600px;}
+.avoid .container .left video{
+    width: 370px;
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 200px;
+}
+.avoid .container .right{flex-direction: column;}
+.avoid .container .right li{
+    margin-left: 40px;
+}
+
+/* challenge */
+.challenge .container .left{
+    margin-right: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.challenge .container .right .one{
+    height: 45px;
+    position: absolute;
+    margin-top: -25px;
+}
+.challenge .container .right .two{height: 420px;}
+
+/* references */
+.ref .container{
+    display: flex;
+    justify-content: center;
+    width: 417.43px;
+    height: 300px;
+    margin-top: 100px;
+}
+.ref .container img{
+    height: 250px;
+}
+.ref .container .top{
+    position: absolute;
+    display: none;
+}
+.ref .container:hover .top{
+    display: block;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px){
+    .getToKnow .container, .fastFashion .container, .avoid .container, .challenge .container{
+        flex-direction: column;
+    }
+    .about .container{padding: 200px 0;}
+    .getToKnow .container .left .one{
+        margin-top: -100px;
+        margin-left: -190px;
+    }
+    .getToKnow .container .left .two{
+        margin-top: 110px;
+        margin-left: 200px;
+    }
+    .getToKnow .container .right, .fastFashion .container .left, .avoid .container .left, .challenge .container .left{margin: auto 0;}
+    .getToKnow .container .left, .fastFashion .container .right, .challenge .container .left{align-items: center;}
+    .avoid .container .left{margin-left: -200px;}
+    .getToKnow .container .left, .fastFashion .container .left, .avoid .container .left, .challenge .container .left{margin-bottom: 70px;}
+}
+
+@media screen and (max-width: 900px){
+    .carousel-inner{height: 60vh;}
+    .carousel-item img{height: 60vh;}
+    .carousel-item span{font-size: 10vw;}
+    .center{height: 60vh;}
+}
